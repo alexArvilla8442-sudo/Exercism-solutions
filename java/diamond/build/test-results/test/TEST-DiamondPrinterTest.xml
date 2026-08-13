@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DiamondPrinterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-07-17T01:35:26.919Z" hostname="DESKTOP-E9KNR5F" time="0.247">
+  <properties/>
+  <testcase name="Smallest non-degenerate case with even diamond side length" classname="DiamondPrinterTest" time="0.177"/>
+  <testcase name="Largest possible diamond" classname="DiamondPrinterTest" time="0.005"/>
+  <testcase name="Smallest non-degenerate case with odd diamond side length" classname="DiamondPrinterTest" time="0.004"/>
+  <testcase name="Degenerate case with a single 'A' row" classname="DiamondPrinterTest" time="0.004"/>
+  <testcase name="Degenerate case with no row containing 3 distinct groups of spaces" classname="DiamondPrinterTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

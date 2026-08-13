@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ResistorColorTrioTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-07-02T23:34:46.233Z" hostname="DESKTOP-E9KNR5F" time="0.27">
+  <properties/>
+  <testcase name="Blue and violet and blue" classname="ResistorColorTrioTest" time="0.173"/>
+  <testcase name="Orange and orange and black" classname="ResistorColorTrioTest" time="0.003"/>
+  <testcase name="Maximum possible value" classname="ResistorColorTrioTest" time="0.011"/>
+  <testcase name="Yellow and violet and yellow" classname="ResistorColorTrioTest" time="0.003"/>
+  <testcase name="Green and brown and orange" classname="ResistorColorTrioTest" time="0.003"/>
+  <testcase name="Red and black and red" classname="ResistorColorTrioTest" time="0.002"/>
+  <testcase name="Ignore extra colors" classname="ResistorColorTrioTest" time="0.004"/>
+  <testcase name="Minimum possible value" classname="ResistorColorTrioTest" time="0.003"/>
+  <testcase name="First two colors make an invalid octal number" classname="ResistorColorTrioTest" time="0.003"/>
+  <testcase name="Blue and grey and brown" classname="ResistorColorTrioTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

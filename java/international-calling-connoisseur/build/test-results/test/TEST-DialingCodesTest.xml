@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DialingCodesTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-06-11T00:13:30.631Z" hostname="DESKTOP-E9KNR5F" time="0.274">
+  <properties/>
+  <testcase name="addNewDialingCode leaves already added code" classname="DialingCodesTest" time="0.151"/>
+  <testcase name="setDialingCode updates existing entry" classname="DialingCodesTest" time="0.002"/>
+  <testcase name="getCountry returns a code's country" classname="DialingCodesTest" time="0.014"/>
+  <testcase name="addNewDialingCode adds new codes" classname="DialingCodesTest" time="0.004"/>
+  <testcase name="setDialingCode with multiple entries" classname="DialingCodesTest" time="0.003"/>
+  <testcase name="findDialingCode returns null for country not yet added" classname="DialingCodesTest" time="0.013"/>
+  <testcase name="updateDialingCode updates the map" classname="DialingCodesTest" time="0.01"/>
+  <testcase name="getCodes initially returns an empty map" classname="DialingCodesTest" time="0.002"/>
+  <testcase name="findDialingCode returns a country's dialing code" classname="DialingCodesTest" time="0.003"/>
+  <testcase name="getCountry returns updated country" classname="DialingCodesTest" time="0.002"/>
+  <testcase name="addNewDialingCode leaves already added country" classname="DialingCodesTest" time="0.003"/>
+  <testcase name="setDialingCode adds new entry" classname="DialingCodesTest" time="0.003"/>
+  <system-out><![CDATA[existe
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

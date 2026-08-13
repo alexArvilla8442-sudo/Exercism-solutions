@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NaturalNumberTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-07-09T23:48:09.181Z" hostname="DESKTOP-E9KNR5F" time="0.418">
+  <properties/>
+  <testcase name="Perfect square abundant number is classified correctly" classname="NaturalNumberTest" time="0.156"/>
+  <testcase name="Zero is rejected (as it is not a positive integer)" classname="NaturalNumberTest" time="0.011"/>
+  <testcase name="Smallest abundant number is classified correctly" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="Medium abundant number is classified correctly" classname="NaturalNumberTest" time="0.002"/>
+  <testcase name="Large abundant number is classified correctly" classname="NaturalNumberTest" time="0.003"/>
+  <testcase name="Smallest prime deficient number is classified correctly" classname="NaturalNumberTest" time="0.002"/>
+  <testcase name="Smallest non-prime deficient number is classified correctly" classname="NaturalNumberTest" time="0.003"/>
+  <testcase name="Edge case (no factors other than itself) is classified correctly" classname="NaturalNumberTest" time="0.002"/>
+  <testcase name="Smallest perfect number is classified correctly" classname="NaturalNumberTest" time="0.002"/>
+  <testcase name="Negative integer is rejected (as it is not a positive integer)" classname="NaturalNumberTest" time="0.002"/>
+  <testcase name="Large perfect number is classified correctly" classname="NaturalNumberTest" time="0.003"/>
+  <testcase name="Large deficient number is classified as DEFICIENT" classname="NaturalNumberTest" time="0.169"/>
+  <testcase name="Medium deficient number is classified as DEFICIENT" classname="NaturalNumberTest" time="0.003"/>
+  <testcase name="Medium perfect number is classified correctly" classname="NaturalNumberTest" time="0.003"/>
+  <system-out><![CDATA[Suma factores: 203
+Suma factores: 16
+Suma factores: 42
+Suma factores: 39885825
+Suma factores: 3
+Suma factores: 6
+Suma factores: 33550336
+Suma factores: 1
+Suma factores: 31
+Suma factores: 28
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

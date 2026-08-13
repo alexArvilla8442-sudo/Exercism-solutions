@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RateLimiterTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-08-05T22:26:09.611Z" hostname="DESKTOP-E9KNR5F" time="0.374">
+  <properties/>
+  <testcase name="Denies requests just before boundary" classname="RateLimiterTest" time="0.194"/>
+  <testcase name="Exact boundary starts a new window each time" classname="RateLimiterTest" time="0.017"/>
+  <testcase name="Independent counters/windows per key" classname="RateLimiterTest" time="0.009"/>
+  <testcase name="Supports Integer keys" classname="RateLimiterTest" time="0.009"/>
+  <testcase name="Supports UUID keys" classname="RateLimiterTest" time="0.012"/>
+  <testcase name="Long gaps reset window" classname="RateLimiterTest" time="0.015"/>
+  <testcase name="Supports Long keys" classname="RateLimiterTest" time="0.02"/>
+  <testcase name="Allows up to window limit" classname="RateLimiterTest" time="0.013"/>
+  <testcase name="Resets at boundary, then counts within window" classname="RateLimiterTest" time="0.011"/>
+  <testcase name="Allows first request at exact boundary" classname="RateLimiterTest" time="0.007"/>
+  <system-out><![CDATA[
+Creando usuario, bienvenido: A
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {A=2}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {A=2}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00001S
+Tiempo transcurrido: PT0.000009999S
+Numero Sesiones por Usuario: {A=2}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Creando usuario, bienvenido: k
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.00000001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000010Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000010Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.00000001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000020Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000020Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.00000001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000030Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000030Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.00000001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000040Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000040Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.00000001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000050Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {k=1}
+Primer Login por Usuario: {k=1970-01-01T00:00:00.000000050Z}
+
+Creando usuario, bienvenido: A
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000000042Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.0000001S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {A=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000000042Z}
+
+Creando usuario, bienvenido: B
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1, B=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000000042Z, B=1970-01-01T00:00:00.000000042Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.0000001S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {A=1, B=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000000042Z, B=1970-01-01T00:00:00.000000042Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000000101S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1, B=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000000143Z, B=1970-01-01T00:00:00.000000042Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000000101S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1, B=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000000143Z, B=1970-01-01T00:00:00.000000143Z}
+
+Creando usuario, bienvenido: 42
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {42=1}
+Primer Login por Usuario: {42=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.0000001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {42=1}
+Primer Login por Usuario: {42=1970-01-01T00:00:00Z}
+
+Creando usuario, bienvenido: 84
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {84=1, 42=1}
+Primer Login por Usuario: {84=1970-01-01T00:00:00Z, 42=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.0000001S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {84=1, 42=1}
+Primer Login por Usuario: {84=1970-01-01T00:00:00Z, 42=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000000101S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {84=1, 42=1}
+Primer Login por Usuario: {84=1970-01-01T00:00:00Z, 42=1970-01-01T00:00:00.000000101Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000000101S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {84=1, 42=1}
+Primer Login por Usuario: {84=1970-01-01T00:00:00.000000101Z, 42=1970-01-01T00:00:00.000000101Z}
+
+Creando usuario, bienvenido: 00000000-0000-0000-0000-000000000001
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {00000000-0000-0000-0000-000000000001=1}
+Primer Login por Usuario: {00000000-0000-0000-0000-000000000001=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT1S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {00000000-0000-0000-0000-000000000001=1}
+Primer Login por Usuario: {00000000-0000-0000-0000-000000000001=1970-01-01T00:00:00Z}
+
+Creando usuario, bienvenido: 00000000-0000-0000-0000-000000000002
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {00000000-0000-0000-0000-000000000001=1, 00000000-0000-0000-0000-000000000002=1}
+Primer Login por Usuario: {00000000-0000-0000-0000-000000000001=1970-01-01T00:00:00Z, 00000000-0000-0000-0000-000000000002=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT1S
+Tiempo transcurrido: PT0.001S
+Numero Sesiones por Usuario: {00000000-0000-0000-0000-000000000001=1, 00000000-0000-0000-0000-000000000002=1}
+Primer Login por Usuario: {00000000-0000-0000-0000-000000000001=1970-01-01T00:00:00Z, 00000000-0000-0000-0000-000000000002=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT1.001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {00000000-0000-0000-0000-000000000001=1, 00000000-0000-0000-0000-000000000002=1}
+Primer Login por Usuario: {00000000-0000-0000-0000-000000000001=1970-01-01T00:00:01.001Z, 00000000-0000-0000-0000-000000000002=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT1.001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {00000000-0000-0000-0000-000000000001=1, 00000000-0000-0000-0000-000000000002=1}
+Primer Login por Usuario: {00000000-0000-0000-0000-000000000001=1970-01-01T00:00:01.001Z, 00000000-0000-0000-0000-000000000002=1970-01-01T00:00:01.001Z}
+
+Creando usuario, bienvenido: X
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {X=1}
+Primer Login por Usuario: {X=1970-01-01T00:00:00.000001Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {X=2}
+Primer Login por Usuario: {X=1970-01-01T00:00:00.000001Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000005S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {X=2}
+Primer Login por Usuario: {X=1970-01-01T00:00:00.000001Z}
+
+Numero de sesiones actuales: 2
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000001001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {X=1}
+Primer Login por Usuario: {X=1970-01-01T00:00:00.000002001Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {X=2}
+Primer Login por Usuario: {X=1970-01-01T00:00:00.000002001Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000005S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {X=2}
+Primer Login por Usuario: {X=1970-01-01T00:00:00.000002001Z}
+
+Creando usuario, bienvenido: 1
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {1=1}
+Primer Login por Usuario: {1=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {1=2}
+Primer Login por Usuario: {1=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000005S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {1=2}
+Primer Login por Usuario: {1=1970-01-01T00:00:00Z}
+
+Creando usuario, bienvenido: 2
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {1=2, 2=1}
+Primer Login por Usuario: {1=1970-01-01T00:00:00Z, 2=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {1=2, 2=2}
+Primer Login por Usuario: {1=1970-01-01T00:00:00Z, 2=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00000005S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {1=2, 2=2}
+Primer Login por Usuario: {1=1970-01-01T00:00:00Z, 2=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000000051S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {1=1, 2=2}
+Primer Login por Usuario: {1=1970-01-01T00:00:00.000000051Z, 2=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000000051S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {1=1, 2=1}
+Primer Login por Usuario: {1=1970-01-01T00:00:00.000000051Z, 2=1970-01-01T00:00:00.000000051Z}
+
+Creando usuario, bienvenido: A
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {A=2}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+Welcome
+Numero de sesion actualizada: 3
+Numero Sesiones por Usuario: {A=3}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 3
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00001S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {A=3}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Creando usuario, bienvenido: key
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {key=1}
+Primer Login por Usuario: {key=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {key=2}
+Primer Login por Usuario: {key=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.000005S
+Tiempo transcurrido: PT0.000000001S
+Numero Sesiones por Usuario: {key=2}
+Primer Login por Usuario: {key=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.000005001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {key=1}
+Primer Login por Usuario: {key=1970-01-01T00:00:00.000005001Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {key=2}
+Primer Login por Usuario: {key=1970-01-01T00:00:00.000005001Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.000005S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {key=2}
+Primer Login por Usuario: {key=1970-01-01T00:00:00.000005001Z}
+
+Creando usuario, bienvenido: A
+Numero de sesiones actuales: 0
+Welcome
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 1
+Welcome
+Numero de sesion actualizada: 2
+Numero Sesiones por Usuario: {A=2}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+LIMITE ALCANZADO, POR FAVOR ESPERA: PT0.00001S
+Tiempo transcurrido: PT0S
+Numero Sesiones por Usuario: {A=2}
+Primer Login por Usuario: {A=1970-01-01T00:00:00Z}
+
+Numero de sesiones actuales: 2
+Ya paso el tiempo  de espera, bienvenido  otra vez
+Tiempo transcurrido: PT0.00001S
+Numero de sesion actualizada: 1
+Numero Sesiones por Usuario: {A=1}
+Primer Login por Usuario: {A=1970-01-01T00:00:00.000010Z}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

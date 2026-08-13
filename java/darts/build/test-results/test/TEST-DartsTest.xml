@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DartsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-06-24T23:46:12.539Z" hostname="DESKTOP-E9KNR5F" time="0.252">
+  <properties/>
+  <testcase name="Exactly on center" classname="DartsTest" time="0.15"/>
+  <testcase name="On the inner circle" classname="DartsTest" time="0.002"/>
+  <testcase name="Just within the inner circle" classname="DartsTest" time="0.002"/>
+  <testcase name="Just within the middle circle" classname="DartsTest" time="0.002"/>
+  <testcase name="Asymmetric position between the inner and middle circles" classname="DartsTest" time="0.002"/>
+  <testcase name="Near the center" classname="DartsTest" time="0.002"/>
+  <testcase name="Missed target" classname="DartsTest" time="0.003"/>
+  <testcase name="Just outside the outer circle" classname="DartsTest" time="0.003"/>
+  <testcase name="Just outside the middle circle" classname="DartsTest" time="0.002"/>
+  <testcase name="On the middle circle" classname="DartsTest" time="0.002"/>
+  <testcase name="On the outer circle" classname="DartsTest" time="0.002"/>
+  <testcase name="Just within the outer circle" classname="DartsTest" time="0.001"/>
+  <testcase name="Just outside the inner circle" classname="DartsTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

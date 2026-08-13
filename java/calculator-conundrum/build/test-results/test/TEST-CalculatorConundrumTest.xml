@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalculatorConundrumTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-06-13T01:33:16.006Z" hostname="DESKTOP-E9KNR5F" time="0.356">
+  <properties/>
+  <testcase name="The calculate method throws IllegalArgumentException when passing empty operation" classname="CalculatorConundrumTest" time="0.207"/>
+  <testcase name="The calculate method returns the correct result when dividing small operands" classname="CalculatorConundrumTest" time="0.018"/>
+  <testcase name="The calculate method throws IllegalArgumentException when passing null operation" classname="CalculatorConundrumTest" time="0.004"/>
+  <testcase name="The calculate method throws IllegalOperationException when dividing by zero" classname="CalculatorConundrumTest" time="0.004"/>
+  <testcase name="The calculate method returns the correct result when dividing large operands" classname="CalculatorConundrumTest" time="0.004"/>
+  <testcase name="The calculate method returns the correct result when adding small operands" classname="CalculatorConundrumTest" time="0.002"/>
+  <testcase name="The calculate method throws IllegalOperationException when passing invalid operation" classname="CalculatorConundrumTest" time="0.02"/>
+  <testcase name="The calculate method returns the correct result when adding large operands" classname="CalculatorConundrumTest" time="0.004"/>
+  <testcase name="The calculate method returns the correct result when multiplying small operands" classname="CalculatorConundrumTest" time="0.01"/>
+  <testcase name="The calculate method returns the correct result when multiplying large operands" classname="CalculatorConundrumTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
